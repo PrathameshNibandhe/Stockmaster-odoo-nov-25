@@ -22,7 +22,7 @@ $active_page = isset($active_page) ? $active_page : '';
         
         <!-- Dashboard -->
         <div class="px-3">
-            <a href="dashboard.php" 
+            <a href="../dashboard.php" 
                class="flex items-center px-3 py-2.5 rounded-lg font-medium transition-colors 
                <?php echo ($active_page == 'dashboard') ? 'bg-blue-50 text-[#2563EB]' : 'text-gray-600 hover:bg-blue-50 hover:text-[#2563EB]'; ?>">
                 <i class="fas fa-th-large w-6"></i>
