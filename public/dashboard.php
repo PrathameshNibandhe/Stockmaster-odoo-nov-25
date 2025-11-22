@@ -46,7 +46,7 @@
                             <i class="fas fa-truck w-6 group-hover:text-[#2563EB] transition-colors"></i>
                             <span>Deliveries</span>
                         </a>
-                        <a href="#" class="flex items-center px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-[#2563EB] rounded-lg transition-colors group">
+                        <a href="../public/transfers/list.php" class="flex items-center px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-[#2563EB] rounded-lg transition-colors group">
                             <i class="fas fa-sync-alt w-6 group-hover:text-[#2563EB] transition-colors"></i>
                             <span>Internal Transfers</span>
                         </a>
@@ -88,10 +88,10 @@
             <div class="border-t border-gray-100 p-4">
                 <div class="flex items-center gap-3">
                     <div class="h-9 w-9 rounded-full bg-[#2563EB] flex items-center justify-center text-white font-bold text-sm shadow-md">
-                        JD
+                        PN
                     </div>
                     <div>
-                        <p class="text-sm font-medium text-gray-700">John Doe</p>
+                        <p class="text-sm font-medium text-gray-700">Prathamesh Nibandhe</p>
                         <p class="text-xs text-gray-500">Warehouse Manager</p>
                     </div>
                 </div>
