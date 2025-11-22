@@ -4,7 +4,7 @@ $navItems = [
   ["title" => "Home", "link" => "index.php"],
   ["title" => "Features", "link" => "features.php"], // Showcase Receipts, Deliveries, Transfers
   ["title" => "Pricing", "link" => "pricing.php"],
-  ["title" => "Warehouses", "link" => "warehouses.php"], // Multi-warehouse support
+  ["title" => "Warehouses", "link" => "warehouse.php"], // Multi-warehouse support
 ];
 ?>
 <!DOCTYPE html>
