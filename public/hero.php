@@ -23,7 +23,7 @@
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="backend/signup.php" class="px-8 py-4 bg-[#2563EB] text-white rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/30 text-center">
+                    <a href="register.php" class="px-8 py-4 bg-[#2563EB] text-white rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/30 text-center">
                         Get Started Free
                     </a>
                     <a href="#features" class="px-8 py-4 bg-white text-gray-700 border border-gray-200 rounded-xl font-bold hover:bg-gray-50 transition text-center flex items-center justify-center gap-2">
