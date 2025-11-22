@@ -176,3 +176,55 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </body>
 </html>
+<?php
+include "../backend/config/db.php";   // adjust path if needed
+
+$error = "";
+$success = "";
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+    $login_id  = $_POST['login_id'] ?? '';
+    $email     = $_POST['email'] ?? '';
+    $password  = $_POST['password'] ?? '';
+    $confirm_password = $_POST['confirm_password'] ?? '';
+
+    // Basic Validation
+    if (empty($login_id) || empty($email) || empty($password) || empty($confirm_password)) {
+        $error = "All fields are required.";
+    }
+    elseif ($password !== $confirm_password) {
+        $error = "Passwords do not match.";
+    }
+    else {
+
+        // Check if email or login id already exists
+        $check = $conn->prepare("SELECT * FROM users WHERE email = ? OR login_id = ?");
+        $check->bind_param("ss", $email, $login_id);
+        $check->execute();
+        $result = $check->get_result();
+
+        if ($result->num_rows > 0) {
+            $error = "Email or Login ID already exists!";
+        } 
+        else {
+
+            // HASH PASSWORD
+            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+            // INSERT INTO DATABASE
+            $stmt = $conn->prepare("
+                INSERT INTO users (login_id, email, password, role) 
+                VALUES (?, ?, ?, 'warehouse_staff')
+            ");
+            $stmt->bind_param("sss", $login_id, $email, $hashed_password);
+
+            if ($stmt->execute()) {
+                $success = "Registration successful!";
+            } else {
+                $error = "Failed to register: " . $conn->error;
+            }
+        }
+    }
+}
+?>
