@@ -76,7 +76,7 @@
 
                 <!-- Forgot Password Link -->
                 <div class="flex items-center justify-end">
-                    <a href="#" class="text-sm font-medium text-[#2563EB] hover:text-blue-700 transition">
+                    <a href="forgotPassword.php" class="text-sm font-medium text-[#2563EB] hover:text-blue-700 transition">
                         Forgot Password?
                     </a>
                 </div>

@@ -169,7 +169,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- Footer link to Home -->
         <div class="bg-gray-50 px-8 py-4 border-t border-gray-100 text-center">
             <p class="text-xs text-gray-500">
-                &larr; Back to <a href="../index.php" class="text-[#2563EB] hover:underline">Home Page</a>
+                &larr; Back to <a href="index.php" class="text-[#2563EB] hover:underline">Home Page</a>
             </p>
         </div>
     </div>
