@@ -42,7 +42,7 @@
                             <i class="fas fa-truck-loading w-6 group-hover:text-[#2563EB] transition-colors"></i>
                             <span>Receipts</span>
                         </a>
-                        <a href="#" class="flex items-center px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-[#2563EB] rounded-lg transition-colors group">
+                        <a href="deliveries/delivery.php" class="flex items-center px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-[#2563EB] rounded-lg transition-colors group">
                             <i class="fas fa-truck w-6 group-hover:text-[#2563EB] transition-colors"></i>
                             <span>Deliveries</span>
                         </a>
@@ -194,7 +194,7 @@
                         </div>
 
                         <div class="mt-5">
-                            <button class="w-full py-2 text-sm font-medium text-indigo-600 bg-indigo-50 rounded-lg hover:bg-indigo-600 hover:text-white transition-colors">
+                            <button class="w-full py-2 text-sm font-medium text-indigo-600 bg-indigo-50 rounded-lg hover:bg-indigo-600 hover:text-white transition-colors" id="myButton" onclick="window.location.href = 'deliveries/delivery.php';">  
                                 View All Deliveries
                             </button>
                         </div>
