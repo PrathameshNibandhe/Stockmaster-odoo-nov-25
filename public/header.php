@@ -19,12 +19,6 @@ $navItems = [
 
 <body class="min-h-screen font-sans bg-gray-50">
 
-  <div class="bg-[#1E293B]">
-    <div class="max-w-7xl mx-auto w-full text-white text-center py-2 text-sm font-medium">
-      Replace your manual registers! <span class="font-bold text-[#60A5FA]">Get 1 Month Free</span> for new warehouses.
-    </div>
-  </div>
-
   <header class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-7xl mx-auto w-full flex justify-between items-center px-6 py-4">
 

@@ -130,36 +130,36 @@ include 'header.php';
 
 <!-- 🔥 PRICE TOGGLE SCRIPT -->
 <script>
-  let isYearly = false;
+    let isYearly = false;
 
-  document.getElementById("billing-toggle").addEventListener("click", function () {
-      isYearly = !isYearly;
+    const priceBusiness = document.getElementById("price-business");
+    const periodBusiness = document.getElementById("period-business");
 
-      const toggleSwitch = document.getElementById("toggle-switch");
-      const toggleCircle = document.getElementById("toggle-circle");
-      const monthlyLabel = document.getElementById("monthly-label");
-      const yearlyLabel = document.getElementById("yearly-label");
+    const priceEnterprise = document.getElementById("price-enterprise");
+    const periodEnterprise = document.getElementById("period-enterprise");
 
-      // Move circle left/right
-      if (isYearly) {
-          toggleCircle.style.transform = "translateX(24px)";
-          toggleSwitch.style.backgroundColor = "#16a34a"; // green for yearly
+    const toggleSwitch = document.getElementById("toggle-switch");
+    const toggleCircle = document.getElementById("toggle-circle");
 
-          monthlyLabel.classList.remove("text-gray-900", "font-bold");
-          monthlyLabel.classList.add("text-gray-500", "font-medium");
+    document.getElementById("billing-toggle").addEventListener("click", () => {
+        isYearly = !isYearly;
 
-          yearlyLabel.classList.remove("text-gray-500");
-          yearlyLabel.classList.add("text-gray-900", "font-bold");
-      } else {
-          toggleCircle.style.transform = "translateX(0px)";
-          toggleSwitch.style.backgroundColor = "#2563EB"; // blue for monthly
+        if (isYearly) {
+            toggleCircle.style.transform = "translateX(24px)";
+            
+            priceBusiness.textContent = "₹799";
+            periodBusiness.textContent = "/year";
 
-          yearlyLabel.classList.remove("text-gray-900", "font-bold");
-          yearlyLabel.classList.add("text-gray-500", "font-medium");
+            priceEnterprise.textContent = "₹1499";
+            periodEnterprise.textContent = "/year";
+        } else {
+            toggleCircle.style.transform = "translateX(0px)";
 
-          monthlyLabel.classList.remove("text-gray-500");
-          monthlyLabel.classList.add("text-gray-900", "font-bold");
-      }
-  });
+            priceBusiness.textContent = "₹299";
+            periodBusiness.textContent = "/month";
+
+            priceEnterprise.textContent = "₹499";
+            periodEnterprise.textContent = "/month";
+        }
+    });
 </script>
-
