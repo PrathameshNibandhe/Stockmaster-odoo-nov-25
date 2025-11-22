@@ -22,7 +22,7 @@ $active_page = isset($active_page) ? $active_page : '';
         
         <!-- Dashboard -->
         <div class="px-3">
-            <a href="<?php echo $path_to_root; ?>dashboard.php" 
+            <a href="dashboard.php" 
                class="flex items-center px-3 py-2.5 rounded-lg font-medium transition-colors 
                <?php echo ($active_page == 'dashboard') ? 'bg-blue-50 text-[#2563EB]' : 'text-gray-600 hover:bg-blue-50 hover:text-[#2563EB]'; ?>">
                 <i class="fas fa-th-large w-6"></i>
@@ -36,7 +36,7 @@ $active_page = isset($active_page) ? $active_page : '';
             <div class="px-3 space-y-1">
                 
                 <!-- Receipts -->
-                <a href="<?php echo $path_to_root; ?>receipts/receipts.php" 
+                <a href="../receipts/receipts.php" 
                    class="flex items-center px-3 py-2 rounded-lg transition-colors group
                    <?php echo ($active_page == 'receipts') ? 'bg-blue-50 text-[#2563EB] font-medium' : 'text-gray-600 hover:bg-blue-50 hover:text-[#2563EB]'; ?>">
                     <i class="fas fa-truck-loading w-6 <?php echo ($active_page == 'receipts') ? '' : 'group-hover:text-[#2563EB]'; ?> transition-colors"></i>
@@ -44,14 +44,14 @@ $active_page = isset($active_page) ? $active_page : '';
                 </a>
 
                 <!-- Deliveries (Indigo Theme when active) -->
-                <a href="<?php echo $path_to_root; ?>deliveries/deliveries.php" 
+                <a href="../deliveries/delivery.php" 
                    class="flex items-center px-3 py-2 rounded-lg transition-colors group
                    <?php echo ($active_page == 'deliveries') ? 'bg-indigo-50 text-indigo-600 font-medium' : 'text-gray-600 hover:bg-blue-50 hover:text-[#2563EB]'; ?>">
-                    <i class="fas fa-truck w-6 <?php echo ($active_page == 'deliveries') ? '' : 'group-hover:text-[#2563EB]'; ?> transition-colors"></i>
+                    <i class="fas fa-truck w-6 transition-colors"></i>
                     <span>Deliveries</span>
                 </a>
 
-                <a href="#" class="flex items-center px-3 py-2 text-gray-600 hover:bg-blue-50 hover:text-[#2563EB] rounded-lg transition-colors group">
+                <a href="../transfers/list.php" class="flex items-center px-3 py-2 text-gray-600 hover:bg-blue-50 hover:text-[#2563EB] rounded-lg transition-colors group">
                     <i class="fas fa-sync-alt w-6 group-hover:text-[#2563EB] transition-colors"></i>
                     <span>Internal Transfers</span>
                 </a>

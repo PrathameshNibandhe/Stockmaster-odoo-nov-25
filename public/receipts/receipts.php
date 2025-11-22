@@ -13,7 +13,7 @@
 
     <div class="flex h-screen overflow-hidden">
 
-        <aside class="w-64 bg-white border-r border-gray-200 hidden md:flex flex-col shadow-sm z-10">
+        <!-- <aside class="w-64 bg-white border-r border-gray-200 hidden md:flex flex-col shadow-sm z-10">
             <div class="h-16 flex items-center px-6 border-b border-gray-100">
                 <a href="../index.php" class="flex items-center gap-2 font-bold text-xl text-[#2563EB]">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -90,7 +90,8 @@
                     </div>
                 </div>
             </div>
-        </aside>
+        </aside> -->
+        <?php include '../sidebar.php';?>
 
         <div class="flex-1 flex flex-col overflow-hidden">
 

@@ -11,9 +11,9 @@
 
 <div class="flex h-screen overflow-hidden">
 
-    <!-- Sidebar -->
-    <aside class="w-64 bg-white border-r border-gray-200 hidden md:flex flex-col shadow-sm z-10">
-        <!-- Brand Logo -->
+
+    <!-- <aside class="w-64 bg-white border-r border-gray-200 hidden md:flex flex-col shadow-sm z-10">
+
         <div class="h-16 flex items-center px-6 border-b border-gray-100">
             <a href="../../index.php" class="flex items-center gap-2 font-bold text-xl text-[#2563EB]">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -23,10 +23,8 @@
             </a>
         </div>
 
-        <!-- Navigation Links -->
         <nav class="flex-1 overflow-y-auto py-4 space-y-1">
             
-            <!-- Main Group -->
             <div class="px-3">
                 <a href="../dashboard.php" class="flex items-center px-3 py-2.5 text-gray-600 hover:bg-gray-50 hover:text-[#2563EB] rounded-lg transition-colors group">
                     <i class="fas fa-th-large w-6 group-hover:text-[#2563EB] transition-colors"></i>
@@ -34,7 +32,7 @@
                 </a>
             </div>
 
-            <!-- Operations Group -->
+
             <div class="mt-6">
                 <h3 class="px-6 text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Operations</h3>
                 <div class="px-3 space-y-1">
@@ -46,7 +44,7 @@
                         <i class="fas fa-truck w-6 group-hover:text-[#2563EB] transition-colors"></i>
                         <span>Deliveries</span>
                     </a>
-                    <!-- Active State for Internal Transfers -->
+
                     <a href="#" class="flex items-center px-3 py-2 bg-blue-50 text-[#2563EB] rounded-lg font-medium transition-colors">
                         <i class="fas fa-sync-alt w-6"></i>
                         <span>Internal Transfers</span>
@@ -54,7 +52,6 @@
                 </div>
             </div>
 
-            <!-- Inventory Group -->
             <div class="mt-6">
                 <h3 class="px-6 text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Inventory</h3>
                 <div class="px-3 space-y-1">
@@ -69,7 +66,6 @@
                 </div>
             </div>
 
-            <!-- System Group -->
             <div class="mt-6">
                 <h3 class="px-6 text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">System</h3>
                 <div class="px-3 space-y-1">
@@ -85,7 +81,6 @@
             </div>
         </nav>
         
-        <!-- User Mini Profile -->
         <div class="border-t border-gray-100 p-4">
             <div class="flex items-center gap-3">
                 <div class="h-9 w-9 rounded-full bg-[#2563EB] flex items-center justify-center text-white font-bold text-sm shadow-md">
@@ -97,7 +92,8 @@
                 </div>
             </div>
         </div>
-    </aside>
+    </aside> -->
+    <?php include '../sidebar.php' ?>
 
     <!-- Main Content Area -->
     <div class="flex-1 flex flex-col overflow-hidden">
