@@ -61,7 +61,7 @@
                             <i class="fas fa-boxes w-6 group-hover:text-[#2563EB] transition-colors"></i>
                             <span>Products</span>
                         </a>
-                        <a href="#" class="flex items-center px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-[#2563EB] rounded-lg transition-colors group">
+                        <a href="../public/transfers/move_history.php" class="flex items-center px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-[#2563EB] rounded-lg transition-colors group">
                             <i class="fas fa-history w-6 group-hover:text-[#2563EB] transition-colors"></i>
                             <span>Move History</span>
                         </a>
