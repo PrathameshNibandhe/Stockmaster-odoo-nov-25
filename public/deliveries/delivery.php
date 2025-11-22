@@ -137,7 +137,7 @@
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div class="flex space-x-2 mb-4 md:mb-0">
                     <!-- Indigo Button for Deliveries -->
-                    <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-indigo-700 flex items-center transition-colors">
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-indigo-700 flex items-center transition-colors" id="myButton" onclick="window.location.href = 'create.php';">
                         <i class="fas fa-plus mr-2"></i> New Delivery
                     </button>
                 </div>
